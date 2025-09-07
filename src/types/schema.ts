@@ -45,6 +45,7 @@ export interface ColorScheme {
   surfaceContainerLow: string;
   surfaceContainerHigh: string;
   surfaceContainerHighest: string;
+  surfaceContainerLowest: string;
   
   // Background colors
   background: string;
@@ -54,6 +55,29 @@ export interface ColorScheme {
   outline: string;
   outlineVariant: string;
   
+  // Additional Material 3 colors
+  surfaceTint: string;
+  shadow: string;
+  scrim: string;
+  inverseSurface: string;
+  inverseOnSurface: string;
+  inversePrimary: string;
+  
+  // Fixed colors
+  primaryFixed: string;
+  onPrimaryFixed: string;
+  primaryFixedDim: string;
+  onPrimaryFixedVariant: string;
+  
+  secondaryFixed: string;
+  onSecondaryFixed: string;
+  secondaryFixedDim: string;
+  onSecondaryFixedVariant: string;
+  
+  tertiaryFixed: string;
+  onTertiaryFixed: string;
+  tertiaryFixedDim: string;
+  onTertiaryFixedVariant: string;
 
 }
 

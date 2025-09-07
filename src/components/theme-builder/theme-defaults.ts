@@ -107,6 +107,7 @@ export function getDefaultTheme(variant: "light" | "dark", seedColor = "#0E5DF7"
       surfaceContainerLow: "#F7F2FA",
       surfaceContainerHigh: "#ECE6F0",
       surfaceContainerHighest: "#E6E0E9",
+      surfaceContainerLowest: "#FFFFFF",
 
       // Background colors
       background: "#FFFBFE",
@@ -115,8 +116,30 @@ export function getDefaultTheme(variant: "light" | "dark", seedColor = "#0E5DF7"
       // Outline colors
       outline: "#79747E",
       outlineVariant: "#CAC4D0",
-
-
+      
+      // Additional Material 3 colors
+      surfaceTint: seedColor,
+      shadow: "#000000",
+      scrim: "#000000",
+      inverseSurface: "#313030",
+      inverseOnSurface: "#F4F0EF",
+      inversePrimary: generateTonalPalette(seedColor, 80),
+      
+      // Fixed colors
+      primaryFixed: generateTonalPalette(seedColor, 90),
+      onPrimaryFixed: generateTonalPalette(seedColor, 10),
+      primaryFixedDim: generateTonalPalette(seedColor, 80),
+      onPrimaryFixedVariant: generateTonalPalette(seedColor, 30),
+      
+      secondaryFixed: "#E8DEFF",
+      onSecondaryFixed: "#1E153B",
+      secondaryFixedDim: "#CCC0F0",
+      onSecondaryFixedVariant: "#4A4169",
+      
+      tertiaryFixed: "#FCDAE0",
+      onTertiaryFixed: "#29161B",
+      tertiaryFixedDim: "#DFBEC4",
+      onTertiaryFixedVariant: "#584146",
     };
   } else {
     return {
@@ -155,6 +178,7 @@ export function getDefaultTheme(variant: "light" | "dark", seedColor = "#0E5DF7"
       surfaceContainerLow: "#1C1B1F",
       surfaceContainerHigh: "#2B2930",
       surfaceContainerHighest: "#36343B",
+      surfaceContainerLowest: "#0E0E0E",
 
       // Background colors
       background: "#141218",
@@ -163,8 +187,30 @@ export function getDefaultTheme(variant: "light" | "dark", seedColor = "#0E5DF7"
       // Outline colors
       outline: "#938F99",
       outlineVariant: "#49454F",
-
-
+      
+      // Additional Material 3 colors
+      surfaceTint: generateTonalPalette(seedColor, 80),
+      shadow: "#000000",
+      scrim: "#000000",
+      inverseSurface: "#E6E0E9",
+      inverseOnSurface: "#313030",
+      inversePrimary: seedColor,
+      
+      // Fixed colors
+      primaryFixed: generateTonalPalette(seedColor, 90),
+      onPrimaryFixed: generateTonalPalette(seedColor, 10),
+      primaryFixedDim: generateTonalPalette(seedColor, 80),
+      onPrimaryFixedVariant: generateTonalPalette(seedColor, 30),
+      
+      secondaryFixed: "#E8DEFF",
+      onSecondaryFixed: "#1E153B",
+      secondaryFixedDim: "#CCC0F0",
+      onSecondaryFixedVariant: "#4A4169",
+      
+      tertiaryFixed: "#FCDAE0",
+      onTertiaryFixed: "#29161B",
+      tertiaryFixedDim: "#DFBEC4",
+      onTertiaryFixedVariant: "#584146",
     };
   }
 }

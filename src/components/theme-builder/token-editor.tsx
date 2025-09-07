@@ -633,6 +633,138 @@ export function TokenEditor() {
                 value={currentTheme.outlineVariant}
                 onChange={(value) => handleColorChange("outlineVariant", value)}
               />
+              <CompactColorInput
+                label="Surface Container Lowest"
+                colorKey="surfaceContainerLowest"
+                value={currentTheme.surfaceContainerLowest}
+                onChange={(value) => handleColorChange("surfaceContainerLowest", value)}
+              />
+            </div>
+          </div>
+
+          <Separator className="my-3" />
+
+          {/* Additional Material 3 Colors */}
+          <div className="space-y-2">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Additional Material 3</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <CompactColorInput
+                label="Surface Tint"
+                colorKey="surfaceTint"
+                value={currentTheme.surfaceTint}
+                onChange={(value) => handleColorChange("surfaceTint", value)}
+              />
+              <CompactColorInput
+                label="Shadow"
+                colorKey="shadow"
+                value={currentTheme.shadow}
+                onChange={(value) => handleColorChange("shadow", value)}
+              />
+              <CompactColorInput
+                label="Scrim"
+                colorKey="scrim"
+                value={currentTheme.scrim}
+                onChange={(value) => handleColorChange("scrim", value)}
+              />
+              <CompactColorInput
+                label="Inverse Surface"
+                colorKey="inverseSurface"
+                value={currentTheme.inverseSurface}
+                onChange={(value) => handleColorChange("inverseSurface", value)}
+              />
+              <CompactColorInput
+                label="Inverse On Surface"
+                colorKey="inverseOnSurface"
+                value={currentTheme.inverseOnSurface}
+                onChange={(value) => handleColorChange("inverseOnSurface", value)}
+              />
+              <CompactColorInput
+                label="Inverse Primary"
+                colorKey="inversePrimary"
+                value={currentTheme.inversePrimary}
+                onChange={(value) => handleColorChange("inversePrimary", value)}
+              />
+            </div>
+          </div>
+
+          <Separator className="my-3" />
+
+          {/* Fixed Colors */}
+          <div className="space-y-2">
+            <h3 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Fixed Colors</h3>
+            <div className="grid grid-cols-2 gap-2">
+              <CompactColorInput
+                label="Primary Fixed"
+                colorKey="primaryFixed"
+                value={currentTheme.primaryFixed}
+                onChange={(value) => handleColorChange("primaryFixed", value)}
+              />
+              <CompactColorInput
+                label="On Primary Fixed"
+                colorKey="onPrimaryFixed"
+                value={currentTheme.onPrimaryFixed}
+                onChange={(value) => handleColorChange("onPrimaryFixed", value)}
+              />
+              <CompactColorInput
+                label="Primary Fixed Dim"
+                colorKey="primaryFixedDim"
+                value={currentTheme.primaryFixedDim}
+                onChange={(value) => handleColorChange("primaryFixedDim", value)}
+              />
+              <CompactColorInput
+                label="On Primary Fixed Variant"
+                colorKey="onPrimaryFixedVariant"
+                value={currentTheme.onPrimaryFixedVariant}
+                onChange={(value) => handleColorChange("onPrimaryFixedVariant", value)}
+              />
+              <CompactColorInput
+                label="Secondary Fixed"
+                colorKey="secondaryFixed"
+                value={currentTheme.secondaryFixed}
+                onChange={(value) => handleColorChange("secondaryFixed", value)}
+              />
+              <CompactColorInput
+                label="On Secondary Fixed"
+                colorKey="onSecondaryFixed"
+                value={currentTheme.onSecondaryFixed}
+                onChange={(value) => handleColorChange("onSecondaryFixed", value)}
+              />
+              <CompactColorInput
+                label="Secondary Fixed Dim"
+                colorKey="secondaryFixedDim"
+                value={currentTheme.secondaryFixedDim}
+                onChange={(value) => handleColorChange("secondaryFixedDim", value)}
+              />
+              <CompactColorInput
+                label="On Secondary Fixed Variant"
+                colorKey="onSecondaryFixedVariant"
+                value={currentTheme.onSecondaryFixedVariant}
+                onChange={(value) => handleColorChange("onSecondaryFixedVariant", value)}
+              />
+              <CompactColorInput
+                label="Tertiary Fixed"
+                colorKey="tertiaryFixed"
+                value={currentTheme.tertiaryFixed}
+                onChange={(value) => handleColorChange("tertiaryFixed", value)}
+              />
+              <CompactColorInput
+                label="On Tertiary Fixed"
+                colorKey="onTertiaryFixed"
+                value={currentTheme.onTertiaryFixed}
+                onChange={(value) => handleColorChange("onTertiaryFixed", value)}
+              />
+              <CompactColorInput
+                label="Tertiary Fixed Dim"
+                colorKey="tertiaryFixedDim"
+                value={currentTheme.tertiaryFixedDim}
+                onChange={(value) => handleColorChange("tertiaryFixedDim", value)}
+              />
+              <CompactColorInput
+                label="On Tertiary Fixed Variant"
+                colorKey="onTertiaryFixedVariant"
+                value={currentTheme.onTertiaryFixedVariant}
+                onChange={(value) => handleColorChange("onTertiaryFixedVariant", value)}
+              />
             </div>
           </div>
 

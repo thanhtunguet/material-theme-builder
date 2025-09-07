@@ -294,6 +294,7 @@ export function ThemeProvider({ children, appDarkMode, onThemeModeChange }: Them
       surfaceContainerLow: generateVariant(0, -40, 95),
       surfaceContainerHigh: generateVariant(0, -30, 88),
       surfaceContainerHighest: generateVariant(0, -25, 85),
+      surfaceContainerLowest: "#FFFFFF",
       
       // Background
       background: "#FEF7FF",
@@ -303,7 +304,29 @@ export function ThemeProvider({ children, appDarkMode, onThemeModeChange }: Them
       outline: generateVariant(0, -20, 50),
       outlineVariant: generateVariant(0, -30, 75),
       
-
+      // Additional Material 3 colors
+      surfaceTint: seed,
+      shadow: "#000000",
+      scrim: "#000000",
+      inverseSurface: "#313030",
+      inverseOnSurface: "#F4F0EF",
+      inversePrimary: generateVariant(0, 0, 30),
+      
+      // Fixed colors
+      primaryFixed: generateVariant(0, -20, 35),
+      onPrimaryFixed: generateVariant(0, 0, -40),
+      primaryFixedDim: generateVariant(0, 0, 30),
+      onPrimaryFixedVariant: generateVariant(0, 0, -25),
+      
+      secondaryFixed: generateVariant(30, -20, 40),
+      onSecondaryFixed: generateVariant(30, 0, -40),
+      secondaryFixedDim: generateVariant(30, -15, 20),
+      onSecondaryFixedVariant: generateVariant(30, 0, -20),
+      
+      tertiaryFixed: generateVariant(60, -20, 45),
+      onTertiaryFixed: generateVariant(60, 0, -40),
+      tertiaryFixedDim: generateVariant(60, -10, 25),
+      onTertiaryFixedVariant: generateVariant(60, 0, -15),
     };
 
     // Generate new dark theme with appropriate contrast adjustments
@@ -343,6 +366,7 @@ export function ThemeProvider({ children, appDarkMode, onThemeModeChange }: Them
       surfaceContainerLow: generateVariant(0, -30, 12),
       surfaceContainerHigh: generateVariant(0, -20, 22),
       surfaceContainerHighest: generateVariant(0, -15, 28),
+      surfaceContainerLowest: "#0E0E0E",
       
       // Background
       background: "#1C1B1F",
@@ -352,8 +376,29 @@ export function ThemeProvider({ children, appDarkMode, onThemeModeChange }: Them
       outline: generateVariant(0, -20, 45),
       outlineVariant: generateVariant(0, -30, 25),
       
-      // Tag color tokens
-
+      // Additional Material 3 colors
+      surfaceTint: generateVariant(0, 0, 30),
+      shadow: "#000000",
+      scrim: "#000000",
+      inverseSurface: "#E6E1E5",
+      inverseOnSurface: "#313030",
+      inversePrimary: seed,
+      
+      // Fixed colors
+      primaryFixed: generateVariant(0, -20, 35),
+      onPrimaryFixed: generateVariant(0, 0, -40),
+      primaryFixedDim: generateVariant(0, 0, 30),
+      onPrimaryFixedVariant: generateVariant(0, 0, -25),
+      
+      secondaryFixed: generateVariant(30, -20, 40),
+      onSecondaryFixed: generateVariant(30, 0, -40),
+      secondaryFixedDim: generateVariant(30, -15, 20),
+      onSecondaryFixedVariant: generateVariant(30, 0, -20),
+      
+      tertiaryFixed: generateVariant(60, -20, 45),
+      onTertiaryFixed: generateVariant(60, 0, -40),
+      tertiaryFixedDim: generateVariant(60, -10, 25),
+      onTertiaryFixedVariant: generateVariant(60, 0, -15),
     };
 
     const newExtendedColors: ExtendedColor[] = [

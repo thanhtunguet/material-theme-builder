@@ -319,10 +319,35 @@ export function generateContrastSchemes(lightScheme: ColorScheme, darkScheme: Co
     surfaceContainerLow: increaseContrast(lightScheme.surfaceContainerLow, true, 0.5),
     surfaceContainerHigh: increaseContrast(lightScheme.surfaceContainerHigh, true, 0.5),
     surfaceContainerHighest: increaseContrast(lightScheme.surfaceContainerHighest, true, 0.5),
+    surfaceContainerLowest: increaseContrast(lightScheme.surfaceContainerLowest, true, 0.5),
     background: increaseContrast(lightScheme.background, true, 0.5),
     onBackground: increaseContrast(lightScheme.onBackground, true, 0.5),
     outline: increaseContrast(lightScheme.outline, true, 0.5),
     outlineVariant: increaseContrast(lightScheme.outlineVariant, true, 0.5),
+    
+    // Additional Material 3 colors
+    surfaceTint: increaseContrast(lightScheme.surfaceTint, true, 0.5),
+    shadow: lightScheme.shadow,
+    scrim: lightScheme.scrim,
+    inverseSurface: increaseContrast(lightScheme.inverseSurface, true, 0.5),
+    inverseOnSurface: increaseContrast(lightScheme.inverseOnSurface, true, 0.5),
+    inversePrimary: increaseContrast(lightScheme.inversePrimary, true, 0.5),
+    
+    // Fixed colors
+    primaryFixed: increaseContrast(lightScheme.primaryFixed, true, 0.5),
+    onPrimaryFixed: increaseContrast(lightScheme.onPrimaryFixed, true, 0.5),
+    primaryFixedDim: increaseContrast(lightScheme.primaryFixedDim, true, 0.5),
+    onPrimaryFixedVariant: increaseContrast(lightScheme.onPrimaryFixedVariant, true, 0.5),
+    
+    secondaryFixed: increaseContrast(lightScheme.secondaryFixed, true, 0.5),
+    onSecondaryFixed: increaseContrast(lightScheme.onSecondaryFixed, true, 0.5),
+    secondaryFixedDim: increaseContrast(lightScheme.secondaryFixedDim, true, 0.5),
+    onSecondaryFixedVariant: increaseContrast(lightScheme.onSecondaryFixedVariant, true, 0.5),
+    
+    tertiaryFixed: increaseContrast(lightScheme.tertiaryFixed, true, 0.5),
+    onTertiaryFixed: increaseContrast(lightScheme.onTertiaryFixed, true, 0.5),
+    tertiaryFixedDim: increaseContrast(lightScheme.tertiaryFixedDim, true, 0.5),
+    onTertiaryFixedVariant: increaseContrast(lightScheme.onTertiaryFixedVariant, true, 0.5),
   };
 
   const lightHighContrast: ColorScheme = {
@@ -352,10 +377,35 @@ export function generateContrastSchemes(lightScheme: ColorScheme, darkScheme: Co
     surfaceContainerLow: increaseContrast(lightScheme.surfaceContainerLow, true, 1.0),
     surfaceContainerHigh: increaseContrast(lightScheme.surfaceContainerHigh, true, 1.0),
     surfaceContainerHighest: increaseContrast(lightScheme.surfaceContainerHighest, true, 1.0),
+    surfaceContainerLowest: increaseContrast(lightScheme.surfaceContainerLowest, true, 1.0),
     background: increaseContrast(lightScheme.background, true, 1.0),
     onBackground: increaseContrast(lightScheme.onBackground, true, 1.0),
     outline: increaseContrast(lightScheme.outline, true, 1.0),
     outlineVariant: increaseContrast(lightScheme.outlineVariant, true, 1.0),
+    
+    // Additional Material 3 colors
+    surfaceTint: increaseContrast(lightScheme.surfaceTint, true, 1.0),
+    shadow: lightScheme.shadow,
+    scrim: lightScheme.scrim,
+    inverseSurface: increaseContrast(lightScheme.inverseSurface, true, 1.0),
+    inverseOnSurface: increaseContrast(lightScheme.inverseOnSurface, true, 1.0),
+    inversePrimary: increaseContrast(lightScheme.inversePrimary, true, 1.0),
+    
+    // Fixed colors
+    primaryFixed: increaseContrast(lightScheme.primaryFixed, true, 1.0),
+    onPrimaryFixed: increaseContrast(lightScheme.onPrimaryFixed, true, 1.0),
+    primaryFixedDim: increaseContrast(lightScheme.primaryFixedDim, true, 1.0),
+    onPrimaryFixedVariant: increaseContrast(lightScheme.onPrimaryFixedVariant, true, 1.0),
+    
+    secondaryFixed: increaseContrast(lightScheme.secondaryFixed, true, 1.0),
+    onSecondaryFixed: increaseContrast(lightScheme.onSecondaryFixed, true, 1.0),
+    secondaryFixedDim: increaseContrast(lightScheme.secondaryFixedDim, true, 1.0),
+    onSecondaryFixedVariant: increaseContrast(lightScheme.onSecondaryFixedVariant, true, 1.0),
+    
+    tertiaryFixed: increaseContrast(lightScheme.tertiaryFixed, true, 1.0),
+    onTertiaryFixed: increaseContrast(lightScheme.onTertiaryFixed, true, 1.0),
+    tertiaryFixedDim: increaseContrast(lightScheme.tertiaryFixedDim, true, 1.0),
+    onTertiaryFixedVariant: increaseContrast(lightScheme.onTertiaryFixedVariant, true, 1.0),
   };
 
   const darkMediumContrast: ColorScheme = {
@@ -385,10 +435,35 @@ export function generateContrastSchemes(lightScheme: ColorScheme, darkScheme: Co
     surfaceContainerLow: increaseContrast(darkScheme.surfaceContainerLow, false, 0.5),
     surfaceContainerHigh: increaseContrast(darkScheme.surfaceContainerHigh, false, 0.5),
     surfaceContainerHighest: increaseContrast(darkScheme.surfaceContainerHighest, false, 0.5),
+    surfaceContainerLowest: increaseContrast(darkScheme.surfaceContainerLowest, false, 0.5),
     background: increaseContrast(darkScheme.background, false, 0.5),
     onBackground: increaseContrast(darkScheme.onBackground, false, 0.5),
     outline: increaseContrast(darkScheme.outline, false, 0.5),
     outlineVariant: increaseContrast(darkScheme.outlineVariant, false, 0.5),
+    
+    // Additional Material 3 colors
+    surfaceTint: increaseContrast(darkScheme.surfaceTint, false, 0.5),
+    shadow: darkScheme.shadow,
+    scrim: darkScheme.scrim,
+    inverseSurface: increaseContrast(darkScheme.inverseSurface, false, 0.5),
+    inverseOnSurface: increaseContrast(darkScheme.inverseOnSurface, false, 0.5),
+    inversePrimary: increaseContrast(darkScheme.inversePrimary, false, 0.5),
+    
+    // Fixed colors
+    primaryFixed: increaseContrast(darkScheme.primaryFixed, false, 0.5),
+    onPrimaryFixed: increaseContrast(darkScheme.onPrimaryFixed, false, 0.5),
+    primaryFixedDim: increaseContrast(darkScheme.primaryFixedDim, false, 0.5),
+    onPrimaryFixedVariant: increaseContrast(darkScheme.onPrimaryFixedVariant, false, 0.5),
+    
+    secondaryFixed: increaseContrast(darkScheme.secondaryFixed, false, 0.5),
+    onSecondaryFixed: increaseContrast(darkScheme.onSecondaryFixed, false, 0.5),
+    secondaryFixedDim: increaseContrast(darkScheme.secondaryFixedDim, false, 0.5),
+    onSecondaryFixedVariant: increaseContrast(darkScheme.onSecondaryFixedVariant, false, 0.5),
+    
+    tertiaryFixed: increaseContrast(darkScheme.tertiaryFixed, false, 0.5),
+    onTertiaryFixed: increaseContrast(darkScheme.onTertiaryFixed, false, 0.5),
+    tertiaryFixedDim: increaseContrast(darkScheme.tertiaryFixedDim, false, 0.5),
+    onTertiaryFixedVariant: increaseContrast(darkScheme.onTertiaryFixedVariant, false, 0.5),
   };
 
   const darkHighContrast: ColorScheme = {
@@ -418,10 +493,35 @@ export function generateContrastSchemes(lightScheme: ColorScheme, darkScheme: Co
     surfaceContainerLow: increaseContrast(darkScheme.surfaceContainerLow, false, 1.0),
     surfaceContainerHigh: increaseContrast(darkScheme.surfaceContainerHigh, false, 1.0),
     surfaceContainerHighest: increaseContrast(darkScheme.surfaceContainerHighest, false, 1.0),
+    surfaceContainerLowest: increaseContrast(darkScheme.surfaceContainerLowest, false, 1.0),
     background: increaseContrast(darkScheme.background, false, 1.0),
     onBackground: increaseContrast(darkScheme.onBackground, false, 1.0),
     outline: increaseContrast(darkScheme.outline, false, 1.0),
     outlineVariant: increaseContrast(darkScheme.outlineVariant, false, 1.0),
+    
+    // Additional Material 3 colors
+    surfaceTint: increaseContrast(darkScheme.surfaceTint, false, 1.0),
+    shadow: darkScheme.shadow,
+    scrim: darkScheme.scrim,
+    inverseSurface: increaseContrast(darkScheme.inverseSurface, false, 1.0),
+    inverseOnSurface: increaseContrast(darkScheme.inverseOnSurface, false, 1.0),
+    inversePrimary: increaseContrast(darkScheme.inversePrimary, false, 1.0),
+    
+    // Fixed colors
+    primaryFixed: increaseContrast(darkScheme.primaryFixed, false, 1.0),
+    onPrimaryFixed: increaseContrast(darkScheme.onPrimaryFixed, false, 1.0),
+    primaryFixedDim: increaseContrast(darkScheme.primaryFixedDim, false, 1.0),
+    onPrimaryFixedVariant: increaseContrast(darkScheme.onPrimaryFixedVariant, false, 1.0),
+    
+    secondaryFixed: increaseContrast(darkScheme.secondaryFixed, false, 1.0),
+    onSecondaryFixed: increaseContrast(darkScheme.onSecondaryFixed, false, 1.0),
+    secondaryFixedDim: increaseContrast(darkScheme.secondaryFixedDim, false, 1.0),
+    onSecondaryFixedVariant: increaseContrast(darkScheme.onSecondaryFixedVariant, false, 1.0),
+    
+    tertiaryFixed: increaseContrast(darkScheme.tertiaryFixed, false, 1.0),
+    onTertiaryFixed: increaseContrast(darkScheme.onTertiaryFixed, false, 1.0),
+    tertiaryFixedDim: increaseContrast(darkScheme.tertiaryFixedDim, false, 1.0),
+    onTertiaryFixedVariant: increaseContrast(darkScheme.onTertiaryFixedVariant, false, 1.0),
   };
 
   return {
